@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background-color: rgba(119, 0, 255, 0.808);
+    color: #ecf0f1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.sidebar a:hover {
+    background-color: #000000;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+.header {
+    background-color: rgba(119, 0, 255, 0.808);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.settings-section {
+    margin-bottom: 20px;
+}
+.settings-section h3 {
+    margin-top: 0;
+}
+.settings-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.settings-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.settings-form input, .settings-form select, .settings-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.settings-form button {
+    background-color: rgba(119, 0, 255, 0.808);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.settings-form button:hover {
+    background-color: rgba(119, 0, 255, 0.808);
+}
