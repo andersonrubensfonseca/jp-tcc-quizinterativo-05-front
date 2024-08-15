@@ -14,7 +14,7 @@
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-itens">
-            <a href="#">Inicio</a>
+            <a href="homepage.html">Inicio</a>
             <a href="#">Todos os quiz</a>
             <a href="aboutUs.html">Sobre nos</a>
             <a href="#">Configurações</a>
@@ -23,24 +23,64 @@
     </header>
 
     <section class="home">
+        <video class="video-slide active" src="1.mp4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="2.mp4.mp4" autoplay muted loop></video>
         <video class="video-slide" src="3.mp4.mp4" autoplay muted loop></video>
-        
-        <div class="content">
+        <video class="video-slide" src="4.mp4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="5.mp4.mp4" autoplay muted loop></video>
+
+        <div class="content active">
             <!-- nome principal da primeira parte que mexe -->
             <h1 class="title">Quiz<br><span>Interativo</span></h1>
             <!-- texto explicativo -->
             <p>Quiz é o nome de um jogo de questionários que tem como objetivo fazer uma avaliação dos conhecimentos sobre determinado assunto. Um quiz interativo é um tipo de material em que, respondendo a algumas perguntas, o usuário consegue obter um resultado para o que estava procurando.</p>
-            <!-- botão de ler mais...tem que ter uma pag so pra continuar essa explicação -->
-            <a href="#">Leia mais</a>
+            <!-- botão de ler mais -->
+            <a href="#">Jogar</a>
         </div>
+
+        <div class="content">
+            <!-- nome principal da primeira parte que mexe -->
+            <h1 class="title">Quiz 2<br><span>Interativo</span></h1>
+            <!-- texto explicativo -->
+            <p>Quiz é o nome de um jogo de questionários que tem como objetivo fazer uma avaliação dos conhecimentos sobre determinado assunto. Um quiz interativo é um tipo de material em que, respondendo a algumas perguntas, o usuário consegue obter um resultado para o que estava procurando.</p>
+            <!-- botão de ler mais -->
+            <a href="#">Jogar</a>
+        </div>
+
+        <div class="content">
+            <!-- nome principal da primeira parte que mexe -->
+            <h1 class="title">Quiz 3<br><span>Interativo</span></h1>
+            <!-- texto explicativo -->
+            <p>Quiz é o nome de um jogo de questionários que tem como objetivo fazer uma avaliação dos conhecimentos sobre determinado assunto. Um quiz interativo é um tipo de material em que, respondendo a algumas perguntas, o usuário consegue obter um resultado para o que estava procurando.</p>
+            <!-- botão de ler mais -->
+            <a href="#">Jogar</a>
+        </div>
+
+        <div class="content">
+            <!-- nome principal da primeira parte que mexe -->
+            <h1 class="title">Quiz 4<br><span>Interativo</span></h1>
+            <!-- texto explicativo -->
+            <p>Quiz é o nome de um jogo de questionários que tem como objetivo fazer uma avaliação dos conhecimentos sobre determinado assunto. Um quiz interativo é um tipo de material em que, respondendo a algumas perguntas, o usuário consegue obter um resultado para o que estava procurando.</p>
+            <!-- botão de ler mais -->
+            <a href="#">Jogar</a>
+        </div>
+
+        <div class="content">
+            <!-- nome principal da primeira parte que mexe -->
+            <h1 class="title">Quiz 5<br><span>Interativo</span></h1>
+            <!-- texto explicativo -->
+            <p>Quiz é o nome de um jogo de questionários que tem como objetivo fazer uma avaliação dos conhecimentos sobre determinado assunto. Um quiz interativo é um tipo de material em que, respondendo a algumas perguntas, o usuário consegue obter um resultado para o que estava procurando.</p>
+            <!-- botão de ler mais -->
+            <a href="#">Jogar</a>
+        </div>
+
         <!-- icones das redes socias -->
         <div class="media-icons">
             <a href="#"><i class='bx bxl-instagram'></i></a>
             <a href="#"><i class='bx bxl-twitter' ></i></a>
         </div>
         <div class="slider-navigation">
-            <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
+            <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
@@ -58,6 +98,45 @@
             navigation.classList.toggle("active");
         });
         
+//javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    contents.forEach((content) => {
+        content.classList.remove("active");
+    });
+
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+        });
+    });
+
+    let indentfy = 0
+    setInterval(()=>{
+        sliderNav(indentfy)
+        indentfy++
+        if(indentfy>=5){
+            indentfy=0 
+        }
+//o tempo de passar um slide para o outro
+    },6000)
     </script>
 
 </body>
