@@ -1,42 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
     margin: 0;
     padding: 0;
-    display: flex;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.sidebar {
-    width: 250px;
-    background-color: rgba(119, 0, 255, 0.808);
-    color: #ecf0f1;
-    height: 100vh;
-    position: fixed;
+
+header {
+    z-index: 999;
+    position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
 }
-.sidebar h2 {
-    margin-top: 0;
-}
-.sidebar a {
-    color: #ecf0f1;
+header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
-    display: block;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
 }
-.sidebar a:hover {
-    background-color: #000000;
+header .navigation{
+    position: relative;
 }
+
+header .navigation .navigation-itens a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-itens a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease; 
+}
+
+header .navigation .navigation-itens a:hover:before{
+    width: 100%;
+}
+section{
+    padding: 100px 200px;
+}
+
 .main-content {
-    margin-left: 250px;
-    padding: 20px;
-    width: calc(100% - 250px);
+    width: 100%;
+    margin: auto;
 }
 .header {
-    background-color: rgba(119, 0, 255, 0.808);
+    background-color: #66c6dc;
     color: #fff;
-    padding: 10px 20px;
+    padding: 50px 20px 10px 20px;
     text-align: center;
 }
 .settings-section {
@@ -63,11 +92,11 @@ body {
     border-radius: 4px;
 }
 .settings-form button {
-    background-color: rgba(119, 0, 255, 0.808);
+    background-color: #66c6dc;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 .settings-form button:hover {
-    background-color: rgba(119, 0, 255, 0.808);
+    background-color: #66c6dc;
 }
