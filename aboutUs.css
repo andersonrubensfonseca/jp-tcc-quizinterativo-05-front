@@ -1,7 +1,3 @@
-.about .row {
-    background-color: #46dfd2;
-}
-
 header {
     z-index: 999;
     position: absolute;
@@ -64,6 +60,7 @@ header .navigation .navigation-itens a:hover:before{
     align-items: center;;
     flex-wrap: wrap;
     padding: 5rem 0;
+    background-color: #46dfd2;
 }
 
 
