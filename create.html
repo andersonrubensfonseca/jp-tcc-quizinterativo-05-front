@@ -12,7 +12,7 @@
     <body>
 <!-- criando a pag de login -->
       <div class="wrapper">
-        <form action="">
+        <form method="Post" onsubmit="return login(event)">
             <h1>Criação de um Login</h1>
             <!-- criação do nome do usuário -->
             <div class="input-box">
@@ -38,7 +38,7 @@
             </div>
 
             <div class="remember-forgot">
-                <label> <input type="checkbox"> Remember me</label>
+                <label> <input type="checkbox"> Lembre me</label>
     
             </div>
             <!-- botao de login -->
@@ -50,7 +50,7 @@
             </div>
         </form>
       </div>
-
+      <script src="./script.js"></script>
  <!-- para finalizar todo o index -->
     </body>
 </html>
