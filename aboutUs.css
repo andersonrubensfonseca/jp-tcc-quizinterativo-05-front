@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
     z-index: 999;
     position: absolute;
@@ -12,7 +19,7 @@ header {
 }
 
 header .brand{
-    color: #fff;
+    color: #000000;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -25,7 +32,7 @@ header .navigation{
 
 header .navigation .navigation-itens a{
     position: relative;
-    color: #fff;
+    color: #000000;
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
@@ -36,7 +43,7 @@ header .navigation .navigation-itens a{
 header .navigation .navigation-itens a:before{
     content: '';
     position: absolute;
-    background: #ffffff;
+    background: #000000;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -50,8 +57,9 @@ header .navigation .navigation-itens a:hover:before{
 
 .heading{
     padding: 2rem;
-    background: #46dfd2;
-    border: 1px solid #fff;
+    background: hsl(192, 80%, 72%);
+    border: 2px solid #fff;
+    margin: 0%;
 
 }
 
@@ -60,7 +68,7 @@ header .navigation .navigation-itens a:hover:before{
     align-items: center;;
     flex-wrap: wrap;
     padding: 5rem 0;
-    background-color: #46dfd2;
+    background-color: hsl(192, 80%, 72%);
 }
 
 
@@ -71,7 +79,7 @@ header .navigation .navigation-itens a:hover:before{
 
 .about .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1.5rem solid #ffffff;
     border-radius: .5rem;
     box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
     height: 100%;
@@ -82,7 +90,7 @@ header .navigation .navigation-itens a:hover:before{
     position: absolute;
     top: 50%; transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff2f2;
+    background: #ffefef;
     padding: 1rem 1rem;
     text-align: center;
     mix-blend-mode: screen;

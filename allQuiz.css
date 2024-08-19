@@ -1,13 +1,20 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 body{
-background-color: antiquewhite;
+background-color: rgb(184, 219, 241);
 }
 
 header {
     z-index: 999;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +23,7 @@ header {
 }
 
 header .brand{
-    color: #000;
+    color: #000000;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -29,7 +36,7 @@ header .navigation{
 
 header .navigation .navigation-itens a{
     position: relative;
-    color: #000;
+    color: #000000;
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
@@ -40,7 +47,7 @@ header .navigation .navigation-itens a{
 header .navigation .navigation-itens a:before{
     content: '';
     position: absolute;
-    background: #fff;
+    background: #000000;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -52,9 +59,15 @@ header .navigation .navigation-itens a:hover:before{
     width: 100%;
 }
 
+.heading{
+   background: rgb(184, 219, 241);
+   border: 3px solid #ffffff;
+   padding-top: 4rem;
+}
+
  .journey__container {
-    background-color: antiquewhite;
-    padding-top: 80px;
+    background-color: rgb(184, 219, 241);
+    padding-top: 30px;
  }
 
  .journey__grid {
@@ -64,8 +77,9 @@ header .navigation .navigation-itens a:hover:before{
  }
 
  .country__card {
-    background-color: antiquewhite;
+    background-color: rgb(184, 219, 241);
  }
+
 
  .country__card img{
     width: 100%;
