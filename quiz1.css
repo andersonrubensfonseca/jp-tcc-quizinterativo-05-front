@@ -19,6 +19,7 @@ body {
 
 body h2{
     color: white;
+    font-size: 32px;
 }
 /* caixinha de fundo */
 main{
@@ -42,12 +43,28 @@ main{
 
 .spnQtd {
     text-align: end;
+    font-size: 24px;
 }
 
 .answers {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.answer {
+    font-size: 24px;
+}
+.answer.correct {
+    font-size: 24px;
+    background-color: green;
+}
+.answer.erro {
+    font-size: 24px;
+    background-color: red;
+}
+
+.question {
+    font-size: 24px;
 }
 /* botão de reiniciar */
 button {
@@ -69,4 +86,9 @@ button {
 
 .finish button {
     text-align: center;
+    font-size: 32px;
+}
+
+.finish span {
+    font-size: 32px;
 }
