@@ -68,7 +68,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background: linear-gradient(90deg, rgba(90,30,159,1) 0%, rgba(77,39,182,1));
+    background: linear-gradient(90deg, rgb(83, 144, 236) 0%, rgb(68, 77, 199));
 }
 
 body h2{
