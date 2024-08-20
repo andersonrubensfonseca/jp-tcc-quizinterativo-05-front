@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     gap: 5px;
     /* cor do fundo da página */
-    background: linear-gradient(90deg, rgb(37, 233, 240) 0%, rgb(73, 167, 243));
+    background: linear-gradient(90deg, rgb(50, 197, 255) 0%, rgb(46, 77, 255));
 }
 
 body h2{
