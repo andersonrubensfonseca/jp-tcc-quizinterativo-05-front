@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-itens a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-itens a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease; 
+}
+
+header .navigation .navigation-itens a:hover:before{
+    width: 100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgb(2, 146, 241) 0%, rgb(134, 212, 243));
+}
+
+body h2{
+    color: white;
+    font-size: 32px;
+}
+/* caixinha de fundo */
+main{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.spnQtd {
+    text-align: end;
+    font-size: 24px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.answer {
+    font-size: 24px;
+}
+.answer.correct {
+    font-size: 24px;
+    background-color: green;
+}
+.answer.erro {
+    font-size: 24px;
+    background-color: red;
+}
+
+.question {
+    font-size: 24px;
+}
+/* botão de reiniciar */
+button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008ccc;
+    color: white;
+}
+
+.finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.finish button {
+    text-align: center;
+    font-size: 32px;
+}
+
+.finish span {
+    font-size: 32px;
+}
