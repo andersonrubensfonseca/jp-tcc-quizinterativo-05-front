@@ -6,7 +6,7 @@
 }
 
 body{
-background-color: rgb(184, 219, 241);
+background-color: hsl(192, 80%, 72%);
 }
 
 header {
@@ -60,13 +60,13 @@ header .navigation .navigation-itens a:hover:before{
 }
 
 .heading{
-   background: rgb(184, 219, 241);
+   background:hsl(192, 80%, 72%);
    border: 3px solid #ffffff;
    padding-top: 4rem;
 }
 
  .journey__container {
-    background-color: rgb(184, 219, 241);
+    background-color: hsl(192, 80%, 72%);
     padding-top: 30px;
  }
 
@@ -77,8 +77,8 @@ header .navigation .navigation-itens a:hover:before{
  }
 
  .country__card {
-    background-color: rgb(184, 219, 241);
- }
+    background-color: hsl(192, 80%, 72%);
+   }
 
 
  .country__card img{
@@ -101,8 +101,9 @@ header .navigation .navigation-itens a:hover:before{
     font-size: 1.2rem;
  }
 
- .country__name span{
+ .country__name a{
     font-style: italic;
+    color: #000000;
  }
 
  .journey__grid {
