@@ -107,7 +107,7 @@ let questions = [
             {option:"Natação", correct: false },
         ],
     },
-] 
+]
 // script do quiz
 const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");

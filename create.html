@@ -12,17 +12,17 @@
     <body>
 <!-- criando a pag de login -->
       <div class="wrapper">
-        <form method="Post" onsubmit="return login(event)">
+        <form id="formcreate" method="Post" onsubmit="return cadastro(event)">
             <h1>Criação de um Login</h1>
             <!-- criação do nome do usuário -->
             <div class="input-box">
-                <input type="text" placeholder="Nome do Usuário"
+                <input type="text" name="Nome" placeholder="Nome do Usuário"
                 required>
                 <i class='bx bxs-user'></i>
             </div>
             <!-- criação do email -->
             <div class="input-box">
-                <input type="email" placeholder="Email"
+                <input type="email" name="Email" placeholder="Email"
                 required>
                 <i class='bx bx-envelope'></i>
             </div>
@@ -32,7 +32,7 @@
                 <i class='bx bxs-phone'></i>
             </div>
             <div class="input-box">
-                <input type="password"
+                <input type="password" name="Senha"
                 placeholder="Senha" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
@@ -42,7 +42,7 @@
     
             </div>
             <!-- botao de login -->
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Criar</button>
 <!-- link pra voltar para a pag de login -->
             <div class="register-link">
                 <p>Voltar para página de login?
