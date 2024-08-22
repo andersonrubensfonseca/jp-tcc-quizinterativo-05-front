@@ -46,8 +46,8 @@ let questions = [
         question: "Qual desses animais marinhos é conhecido por sua habilidade de criar pérolas?",
         answers: [
             {option:"Polvo", correct: false },
-            {option:"Peixe-dourado", correct: true },
-            {option:"Ostra", correct: false },
+            {option:"Ostra", correct: true },
+            {option:"Peixe-dourado", correct: false },
             {option:"Cavalo-marinho", correct: false },
             {option:"Peixe Palhaço", correct: false },
         ],

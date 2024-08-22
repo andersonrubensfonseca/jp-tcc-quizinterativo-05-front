@@ -47,7 +47,7 @@ let questions = [
         answers: [
             {option:"Polvo", correct: false },
             {option:"Ostra", correct: true },
-            {option:"Ostra", correct: false },
+            {option:"Peixe-Dourado", correct: false },
             {option:"Cavalo-marinho", correct: false },
             {option:"Peixe Palhaço", correct: false },
         ],
