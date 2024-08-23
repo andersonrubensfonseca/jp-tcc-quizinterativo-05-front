@@ -25,7 +25,7 @@ let questions = [
         answers: [
             {option:"Tartaruga-de-couro", correct: false },
             {option:"Tartaruga-de-pente", correct: false },
-            {option:"Tartaruga-de-pente", correct: true },
+            {option:"Tartaruga-cabeçuda", correct: true },
             {option:"Tartaruga-de-cabeça-de-tubarão", correct: false },
             {option:"Tartaruga-verde", correct: false },
         ],
@@ -59,7 +59,7 @@ let questions = [
             {option:"Organização não governamental", correct: true },
             {option:"Uma organização política.", correct: false },
             {option:"Uma empresa de turismo.", correct: false },
-            {option:"Empresa privad", correct: false },
+            {option:"Empresa privada", correct: false },
             {option:"Uma rede de restaurantes.", correct: false },
         ],
     },
