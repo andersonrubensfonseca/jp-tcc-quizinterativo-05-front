@@ -12,11 +12,11 @@ let questions = [
     {
         question: "Qual item é essencial para proteger a pele do sol na praia?",
         answers: [
-            {option:"Protetor solar", correct: false },
+            {option:"Protetor solar", correct: true },
             {option:"Água", correct: false },
             {option:"Toalha de praia", correct: false },
             {option:"Cadeira de praia", correct: false },
-            {option:"Óculos de sol", correct: true },
+            {option:"Óculos de sol", correct: false },
         ],
     },
     
@@ -43,7 +43,7 @@ let questions = [
     },
 
     {
-        question: "O que é típico fazer com uma câmara subaquática durante um dia de praia?",
+        question: "O que é típico fazer com uma câmera subaquática durante um dia de praia?",
         answers: [
             {option:"Usar para filmar esportes radicais em terra", correct: false },
             {option:"Fotografar animais marinhos", correct: true },
