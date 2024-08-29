@@ -16,7 +16,7 @@ let questions = [
             {option:"Ação dos ventos sobre a superfície do mar", correct: false },
             {option:"Movimentos tectônicos das placas continentais", correct: false },
             {option:"Mudanças na pressão atmosférica", correct: false },
-            {option:"Atração gravitacional da Lua e do Sol ", correct: true },
+            {option:"Atração gravitacional da Lua e do Sol", correct: true },
         ],
     },
     
