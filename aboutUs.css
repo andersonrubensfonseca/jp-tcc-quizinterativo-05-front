@@ -89,7 +89,7 @@ header .navigation .navigation-itens a:hover:before{
 
 .about .row .video-container h3{
     position: absolute;
-    top: 50%; transform: translateY(-50%);
+    top: 60%; transform: translateY(-50%);
     font-size: 3rem;
     background: #ffefef;
     padding: 1rem 1rem;
